@@ -1,19 +1,11 @@
 <x-guest-layout>
     <div class="min-h-screen flex items-center justify-center bg-gray-100 px-4">
         <div class="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
-
-            <!-- Logo -->
-            <div class="flex justify-center mb-4">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo Sistem" class="w-16 h-16 rounded-full shadow-sm">
-            </div>
-
-            <!-- Judul -->
             <div class="text-center mb-6">
                 <h2 class="text-3xl font-bold text-gray-800">Daftar Akun</h2>
                 <p class="text-gray-500 text-sm mt-2">Buat akun baru untuk memulai</p>
             </div>
 
-            <!-- Form -->
             <form method="POST" action="{{ route('register') }}" class="space-y-5">
                 @csrf
 
